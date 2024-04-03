@@ -37,7 +37,9 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 - Solo laragon: Copiar el respositorio en la carpeta www en la carpeta donde se ubica Laragon, luego abrir el menu principal de Laragon e iniciar todos los servicios con "Start All"
 
 - Vamos a la dirección "prueba-Tecnica-Neering"
-no
+
+- Buscamos el archivo ..env.example y lo renombramos a .env, si hay otro eliminarlo.
+
 > composer install
 
 > php artisan migrate --seed
