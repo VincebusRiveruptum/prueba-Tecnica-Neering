@@ -12,6 +12,8 @@ El repositorio cuenta con dos proyectos, una para el front-end y otra para el ba
 	
 * Frontend
 	- Es una app SPA
+	- Node 18.8.0
+	- NPM 8.18
 	- Vue 3
 	- Pinia
 	- Axios para el consumo de api
@@ -22,7 +24,7 @@ El repositorio cuenta con dos proyectos, una para el front-end y otra para el ba
 
 Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza Laragon o un entorno Ubuntu con Apache, Laravel, Composer y MySQL hay que seguir los siguientes pasos.
 
-* Clonamos el repositorio
+* Clonamos el repositorio en la carpeta /www
 
 > git clone https://github.com/VincebusRiveruptum/prueba-Tecnica-Neering.git
 
@@ -30,8 +32,12 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 
 # Instalación del back-end
 
-- Vamos a la dirección "prueba-Tecnica-Neering"
+- Primero hay que asegurarse que todos los servicios esten ejecutandose,
 
+- Solo laragon: Copiar el respositorio en la carpeta www en la carpeta donde se ubica Laragon, luego abrir el menu principal de Laragon e iniciar todos los servicios con "Start All"
+
+- Vamos a la dirección "prueba-Tecnica-Neering"
+no
 > composer install
 
 > php artisan migrate:seed
@@ -43,8 +49,6 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 * Vamos a la dirección "product-finder-client"
 
 > npm i
-
-> npx tailwindcss -i ./src/assets/main.css -o ./src/assets/main-output.css --watch
 
 > npm run dev
 
