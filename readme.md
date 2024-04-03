@@ -33,7 +33,9 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 - Vamos a la dirección "product-finder-app"
 
 > composer install
+
 > php artisan migrate:seed
+
 > php artisan serve
 
 # Instalación del front-end
@@ -41,7 +43,9 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 * Vamos a la dirección "product-finder-client"
 
 > npm i
+
 > npx tailwindcss -i ./src/assets/main.css -o ./src/assets/main-output.css --watch
+
 > npm run dev
 
 # Notas
