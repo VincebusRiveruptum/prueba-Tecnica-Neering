@@ -40,7 +40,7 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 no
 > composer install
 
-> php artisan migrate:seed
+> php artisan migrate --seed
 
 > php artisan serve
 
