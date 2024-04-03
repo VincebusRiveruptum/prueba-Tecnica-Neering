@@ -84,3 +84,131 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+
+  /* Colors: */
+  --unnamed-color-c2cc00: #C2CC00;
+  --unnamed-color-969393: #969393;
+  --unnamed-color-f0f0f0: #F0F0F0;
+  --unnamed-color-707070: #707070;
+  --unnamed-color-000000: #000000;
+  --unnamed-color-868d96: #868D96;
+  --unnamed-color-13222c34: #13222C34;
+  --unnamed-color-f8fdff: #F8FDFF;
+  --unnamed-color-28d585: #28D585;
+  --unnamed-color-ffd629: #FFD629;
+  --unnamed-color-ff6565: #FF6565;
+  --unnamed-color-730b94: #730B94;
+  --unnamed-color-e3e3e3: #E3E3E3;
+  --unnamed-color-4bc0eb: #4BC0EB;
+  --unnamed-color-d7d9d9: #D7D9D9;
+  --unnamed-color-403e45: #403E45;
+  --unnamed-color-ffffff: #FFFFFF;
+  --unnamed-color-ed12ab: #ED12AB;
+  --unnamed-color-220784: #220784;
+  --unnamed-color-131523: #131523;
+  --unnamed-color-7e84a3: #7E84A3;
+  
+  /* Font/text values */
+  --unnamed-font-family-titillium-web: Titillium Web;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-600: 600px;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-12: 12px;
+  --unnamed-font-size-13: 13px;
+  --unnamed-font-size-15: 15px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-22: 22px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-24: 24px;
+  --unnamed-line-spacing-34: 34px;
+  }
+  
+  /* Character Styles */
+  .texto-boton-primario {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-15);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  }
+
+  .grafico-hover-xxx {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-19);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-131523);
+  }
+
+  .gráfico-hover-leyenda {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-19);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-7e84a3);
+  }
+
+  .grafico-hover {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-13);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  }
+  .arbol-negro {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-600);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-403e45);
+  }
+  .arbol {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-600);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-730b94);
+  }
+  .titulo {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-600);
+  font-size: var(--unnamed-font-size-22);
+  line-height: var(--unnamed-line-spacing-34);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-403e45);
+  }
+  .titulo-select {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-15);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  }
+  .texto-select {
+  font-family: var(--unnamed-font-family-titillium-web);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-15);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-868d96);
+  }
