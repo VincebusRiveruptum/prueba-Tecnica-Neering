@@ -30,7 +30,7 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 
 # Instalación del back-end
 
-- Vamos a la dirección "product-finder-app"
+- Vamos a la dirección "prueba-Tecnica-Neering"
 
 > composer install
 
@@ -62,8 +62,8 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 - Back end			 											
 	- CORREGIR INCONSISTENCIA ENTRE VALIDATION REQUEST POR CLASE Y POR CONTROLADOR EN PRODUCTCONTROLLER
 - Front	
-	- Login														OK
-	- Register													OK
+	- Login - OK
+	- Register - OK
 	- ruta main
 		- Topnavbar
 		- menu desplegable	

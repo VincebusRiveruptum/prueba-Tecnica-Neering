@@ -44,9 +44,9 @@
 *-server/public/storage
 *-server/storage/*.key
 *-server/vendor
-*-server/.env
-*-server/.env.backup
-*-server/.env.production
+#*-server/.env
+#*-server/.env.backup
+#*-server/.env.production
 *-server/.phpunit.result.cache
 *-server/Homestead.json
 *-server/Homestead.yaml
