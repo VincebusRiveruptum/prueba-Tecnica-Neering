@@ -24,6 +24,22 @@ class UserController extends Controller{
         }
     }
 
+    public function getUser($id){
+        try{
+            $user = User::findOrFail($id);
+    
+            return response()->json([
+                'content' => $user,
+                'success' => 'true',
+            ],200);
+        }catch(\Exception $e){
+            return response()->json([
+                'message' => 'Error fetching user: ' . $e->getMessage(),
+                'success' => 'false',
+            ]);
+        }
+    }
+
     // Index but ranged
     public function indexRanged($page, $perPage, $filter){
         try {

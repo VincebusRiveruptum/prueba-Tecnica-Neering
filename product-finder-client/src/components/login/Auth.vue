@@ -1,21 +1,20 @@
 
 <template>
-  <div class="flex flex-row w-full font-neering bg-slate-100">
-    <div class="flex flex-row">
-      <img class="h-screen w-full" src="../../assets/img/Grupo 761.png" alt="neering" />
+  <div class="sm:flex sm:flex-row sm:w-full font-neering items-center bg-slate-100">
+    <div class="flex flex-row justify-center">
+      <img class="sm:h-screen object-cover h-40 w-full " src="../../assets/img/Grupo 761.png" alt="neering" />
     </div>
-    <div class="flex flex-row justify-center w-full">
-      <div class="flex flex-col justify-center">
-        <div class="" >
+    <div class="flex flex-col sm:flex-row h-full justify-center items-center w-full">
+        <div class="p-4 sm:w-auto w-full" >
             <div class="flex flex-col pb-4">
-                <div class="flex flex-row py-4">
+                <div class="flex justify-center sm:justify-normal flex-row ">
                   <img
                     class="w-16 h-16"
                     src="../../assets/logos/Grupo 935.svg"
                     alt="neering-logo"
                   />
                 </div>
-                <div class="flex flex-col py-2">
+                <div class="flex flex-col text-center sm:text-start py-2">
                   <h1 class="font-semibold text-xl">¡Bienvenidos a Neering!</h1>
                   <h1 class="font-extralight text-sm">
                     Desarrolla esta plataforma a la perfección.
@@ -49,7 +48,6 @@
               </div>
             </div>
         </div>
-      </div>
     </div>
   </div>
 </template>

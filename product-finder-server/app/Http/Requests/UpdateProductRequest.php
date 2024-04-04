@@ -26,6 +26,8 @@ class UpdateProductRequest extends FormRequest
             "sku" => "nullable",
             "price" => "nullable|numeric|min:0",
             "description" => "nullable|string",
+            "stock" => 'nullable|numeric',
+            "available" => 'nullable|boolean',
             "photos" => "nullable",
         ];
     }

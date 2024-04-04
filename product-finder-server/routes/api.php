@@ -37,6 +37,7 @@ Route::group(['prefix' => 'products', 'middleware' => 'auth:sanctum'], function 
     Route::post('add', [ProductController::class, 'store']);
     Route::patch('update/{id}', [ProductController::class, 'update']);
     Route::get('indexRanged/{page}/{perPage}', [ProductController::class, 'indexRanged']);
+    Route::get('{id}', [ProductController::class, 'getProduct']);
     Route::get('indexRangedFiltered/{page}/{perPage}', [ProductController::class, 'indexRangedFiltered'])->middleware('blockAfterFiveRequests');
     Route::get('get', [ProductController::class, 'show']);
     Route::delete('delete/{id}', [ProductController::class, 'destroy']);
@@ -45,6 +46,7 @@ Route::group(['prefix' => 'products', 'middleware' => 'auth:sanctum'], function 
 // User requests
 Route::group(['prefix' => 'users', 'middleware' => 'auth:sanctum'], function () {
     Route::get('index', [UserController::class, 'index']);
+    Route::get('{id}', [UserController::class, 'getUser']);
     Route::get('indexRanged/{page}/{perPage}/{filter}', [UserController::class, 'indexRanged']);
     Route::post('add', [UserController::class, 'store']);
     Route::patch('update/{id}', [UserController::class, 'update']);

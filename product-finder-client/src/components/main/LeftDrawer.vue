@@ -1,12 +1,12 @@
 <template>
-    <div class="relative flex flex-col justify-between bg-white shadow-lg inset-y-0 left-0 w-auto z-30 p-2">
+    <div class="relative flex flex-col justify-between bg-white shadow-lg inset-y-0 left-0 w-auto z-10 p-2">
       <div class="flex flex-col">
         <div class="flex flex-row items-center font-neering transition hover:bg-violet-50 rounded-md">
           <div>
             <img class="object-none object-center w-16 h-16" :src="isActive('/') ? homeIcon : homeIconGray">
           </div>
           <div class="text-sm w-full px-4">
-            <RouterLink :class="{ 'font-semibold': $route.path === '/' }" to="/">Inicio</RouterLink>
+            <Button  @click="handleLogoutModal()">Inicio</Button>
           </div>
         </div>
         <div class="flex flex-row items-center font-neering transition hover:bg-violet-50 rounded-md">
@@ -35,11 +35,14 @@
         </div>
       </div>
     </div>
+    <LogoutModal v-if="islogoutModalActive" @close="islogoutModalActive = false" />
   </template>
   
 <script setup>
 
+import { ref} from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
+import LogoutModal from "@/components/main/LogoutModal.vue";
 
 import homeIcon from "../../assets/icons/Grupo 947.svg";
 import productsIcon from "../../assets/icons/Grupo 945.svg";
@@ -49,12 +52,17 @@ import homeIconGray from "../../assets/icons/Grupo 943.svg";
 import productsIconGray from "../../assets/icons/Grupo 944.svg";
 import usersIconGray from "../../assets/icons/Grupo 942.svg";
 
-
 const router = useRouter();
+const islogoutModalActive = ref(false);
 
-const isActive = (route) => {
+function isActive(route){
     return router.currentRoute.value.path === route;
 }
+
+function handleLogoutModal(){
+  islogoutModalActive.value = true;
+}
+
 </script>
 
   

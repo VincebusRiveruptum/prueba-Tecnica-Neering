@@ -39,6 +39,22 @@ class ProductController extends Controller
         }
     }
 
+    public function getProduct($id){
+        try{
+            $product = Product::findOrFail($id);
+    
+            return response()->json([
+                'content' => $product,
+                'success' => 'true',
+            ],200);
+        }catch(\Exception $e){
+            return response()->json([
+                'message' => 'Error fetching product: ' . $e->getMessage(),
+                'success' => 'false',
+            ]);
+        }
+    }
+
     public function indexRangedFiltered($perPage, $page, Request $request) {
         try {
 
@@ -141,7 +157,19 @@ class ProductController extends Controller
         try{
             //dd($request->validated());
             $product = Product::findOrFail($id);
+            
+
+
+            foreach ($request as $key => $value) {
+                if (empty($value)) {
+                    unset($request[$key]);
+                }
+            }
+            
+            
             $product->update($request->validated());
+
+
             return response()->json([
                 'message' => 'Product updated successfully',
                 'success' => 'true',

@@ -31,20 +31,10 @@
           <td
             class="text-sm p-2 font-neering text-center items-center font-bold"
           >
-            <div v-if="user.active">
-              <span class="inline-flex items-center rounded-md bg-sky-400 px-6 py-1 text-sm font-light text-white font-medium">Activo</span>
-            </div>
-            <div v-else>
-              <span class="inline-flex items-center rounded-md bg-slate-200 px-6 py-1 text-sm font-light text-white font-medium">Inactivo</span>  
-              
-            </div>
+            <Badge :yesno="user.active" yestext="Activo" notext="Inactivo"/>
           </td>
           <td>
             <div class="flex flex-row items-center justify-center">
-              <img
-                 class="px-2 hover:scale-125 filter brightness-100 hover:brightness-200 transition-all"
-                src="../../../assets/icons/Componente%2020%20–%2025.svg"
-              />
               <img
                 @click="handleDelete(user.id)"class="px-2 hover:scale-125 filter brightness-100 hover:brightness-150 transition-all"
                 src="../../../assets/icons/Componente%2021%20–%207.svg"
@@ -62,9 +52,9 @@
 
 <script setup>
 
-import { indexUsersRanged } from "../../../api/api";
-import { computed, watch, ref, defineProps} from 'vue';
+import { ref, defineProps} from 'vue';
 import DeleteUserModal from './DeleteUserModal.vue';
+import Badge from '../Badge.vue';
 
 const props = defineProps({
   users:{

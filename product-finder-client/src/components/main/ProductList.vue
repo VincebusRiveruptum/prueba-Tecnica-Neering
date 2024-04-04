@@ -25,8 +25,7 @@
         <div class="px-4">
           <select
             v-model="filterValue"
-            class="sm:w-40 font-neering text-xs p-1 rounded-sm bg-slate-200"
-            type="text"
+            class="sm:w-40 font-neering text-xs p-1 rounded-sm bg-slate-200"        
             id="filterby"
             name="filterby"
           >
@@ -64,9 +63,20 @@
     <ProductTable :products="products" />
     <PaginationControls :page="page" :disabled="isSubmitting" :totalPages="totalPages" @prev="prevPage" @next="nextPage" />
   </div>
+
+
+
+  <div>
+    <RouterView></RouterView>
+  </div>
+
+
+
 </template>
 
 <script setup>
+
+import { RouterView } from "vue-router";
 
 import { ref, defineProps, computed } from "vue";
 import { productIndexRanged, productIndexFiltered } from "../../api/api";

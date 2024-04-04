@@ -20,8 +20,8 @@ fetchMyInfo();
 </script>
 
 <template>
-    <nav class="relative flex flex-row w-full justify-between  items-center p-2 shadow-md z-40">
-        <div class="flex flex-row items-center">
+    <nav class="relative flex flex-row w-full bg-white items-center p-2 shadow-md z-20">
+        <div class="flex flex-row items-center w-full">
             <div class="flex flex-row items-center px-4">
                 <img src="../../assets/logos/Grupo 36.svg" alt="Neering"></img>
             </div>
@@ -29,12 +29,12 @@ fetchMyInfo();
                 <h1 class="font-neering text-md font-semibold">TEST NEERING</h1>
             </div>
         </div>
-        <div class="flex flex-row px-4">
+        <div class="flex flex-row items-center justify-end w-full">
             <div class="flex flex-row px-4">
                 <img src="../../assets/icons/Notificación.svg" alt="bell"></img>
             </div>
-            <div class="flex flex-row px-4">        
-                <img src="../../assets/icons/Elipse 16.png" alt="elipse"></img>
+            <div class="flex flex-row sm:px-4">        
+                <img  src="../../assets/icons/Elipse 16.png" alt="elipse"></img>
             </div>
             <div class="flex flex-row items-center px-4">
                 <h1 class="font-neering font-semibold ">{{ users.getMe.name }}</h1>

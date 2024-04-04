@@ -46,13 +46,10 @@ export async function login(email, password) {
 // Logout
 export async function logout() {
   try {
-    // Make a request to the logout endpoint
-    const response = await axios.post("/logout");
-
+    const response = await axios.get("api/logout");
     // Clear the access token cookie upon successful logout
     Cookies.remove("access_token");
-
-    return response.data;
+    return response;
   } catch (error) {
     throw error;
   }
@@ -104,6 +101,15 @@ export async function addUser(name, email, password, profilepic){
   return response;
 }
 
+export async function getUser(id){
+  try{
+    const response = await axios.get(`/api/users/delete/${id}`)
+    return response;
+  }catch(e){
+    return e;
+  }
+
+}
 // Delete user
 export async function deleteUser(id){
   const response = await axios.delete(`/api/users/delete/${id}`);
@@ -142,13 +148,13 @@ export async function productAdd(name,sku,description,price,photos) {
 }
 
 // Get
-export async function productGet(id) {
-  const data = {
-    id:id,
-  };
-
-  const response = await axios.post("/api/products/get", data);
-  return response;
+export async function getProduct(id) {
+  try{
+    const response = await axios.get(`/api/products/${id}`);
+    return response;
+  }catch(e){
+    return response;
+  }
 }
 
 // Delete
@@ -156,20 +162,34 @@ export async function deleteProduct(id) {
   const data = {
     id:id,
   };
-  const response = await axios.delete(`/api/products/delete/${id}`, data);
+  const response = await axios.delete(`/api/products/delete/${id}`);
   return response;
 }
 
 // Patch
 export async function productUpdate(id,name,sku,description,price,photos) {
-  const data = {
-    name:name,
-    sku:sku,
-    description:description,
-    price:price,
-    photos:photos,
-  };
+  const data = {};
+  if (name) {
+    data.name = name;
+  }
+  if (sku) {
+    data.sku = sku;
+  }
+  if (description) {
+    data.description = description;
+  }
+  if (price) {
+    data.price = price;
+  }
+  if (photos) {
+    data.photos = photos;
+  }
 
-  const response = await axios.patch(`/api/products/update/${id}`, data);
-  return response;
+  console.log("si llega");
+  try{
+    const response = await axios.patch(`/api/products/update/${id}`, data);
+    return response;
+  }catch(e){
+    return e;
+  }
 }
