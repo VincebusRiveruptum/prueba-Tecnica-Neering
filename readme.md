@@ -67,33 +67,22 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 
 - Back end			 											
 	- CORREGIR INCONSISTENCIA ENTRE VALIDATION REQUEST POR CLASE Y POR CONTROLADOR EN PRODUCTCONTROLLER
-- Front	
-	- Login - OK
-	- Register - OK
-	- ruta main
-		- Topnavbar
-		- menu desplegable	
-			- Cerrar sesión			
-			- Redireccionamiento
-			- Configuración usuario
-		- Barra lateral
-			- Navegador											OK
-				
+- Front				
 	- Productos
 		- Vista general 											OK
 		- Paginacion												OK
 		- Agregar													OK
 		- Eliminar													OK
-			- Almacenar fotos de productos		
+			- Almacenar fotos de productos						NO
 		- Modificar
 		- Filtrado													OK
 			- Tipo													OK
 				- Hay stock											OK
 				- No hay stock										OK
 		- Barra de busqueda											OK
-		- ARREGLAR ESTETICA TABLAS
-			- ARREGLAR ITEMS
-	- Usuarios
+		- ARREGLAR ESTETICA TABLAS									OK
+			- ARREGLAR ITEMS										OK
+	- Usuarios														OK
 		- Vista general												OK
 			- PAGINACION											OK
 				- Control de paginación								OK
@@ -106,10 +95,10 @@ Desarrollado bajo el entorno de Laragon en Windows 11, asumiendo que se utiliza 
 			- Filtrado												OK
 				- Usuarios activos									OK
 				- Usuarios inactivos								OK
-	- RESPONSIVIDAD
+	- RESPONSIVIDAD												SEMI
 	- SEEDING														OK
 	- ARREGLAR RUTAS												OK
 		- HOME														OK
 	- STORE DE PINIA												OK
 		- Solo mantener el de el usuario							OK
-	- CERRAR SESIÓN
+	- CERRAR SESIÓN													OK
